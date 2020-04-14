@@ -1,0 +1,72 @@
+//$grid-breakpoints: (
+//  xs: 0,
+//  sm: 576px,
+//  md: 768px,
+//  mdl: 1024px,
+//  lg: 1112px,
+//  xl: 1366px
+//);
+
+$breakpoint: (
+  'small': 320px,
+  'presmall': 480px,
+  'medium': 640px,
+  'premedium': 768px,
+  'large': 1024px,
+  'xlarge': 1200px,
+  'xxlarge': 1440px,
+);
+
+$grid-columns: 12;
+
+$grid-xs: (
+  gutter-width: 10px,
+  grid-margins: 20px
+);
+
+$grid-mdl: (
+  gutter-width: 34px,
+  grid-margins: 50px
+);
+
+$grid-xl: (
+  gutter-width: 34px,
+  grid-margins: 100px
+);
+
+/* Color styles */
+$white: #fff;
+$black: #000;
+$green: #469B46;
+$green-medium: #87E65F;
+$green-light: #E1FFE1;
+$gray: #E1E1E1;
+$white-darker: #F5F5F5;
+$blue: #002653;
+
+$primary: $blue;
+$primary-medium: $green-medium;
+$primary-light: $green-light;
+$secondary: $gray;
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-medium": $primary-medium,
+  "secondary": $secondary,
+  "white": $white
+);
+
+$checkbox-border-color: #969696;
+$modal-border-color: #d8d8d8;
+/* Font styles */
+
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-base: $font-family-roboto;
+
+$body-bg: $secondary;
+$font-size-base: 16px;
+$base-color: $black;
+
+$border-radius: 4px;
+$btn-border-radius: 30px;
+

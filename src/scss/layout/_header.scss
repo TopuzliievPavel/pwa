@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  z-index: 100;
+  background-color: $white;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 600;
+}
+
+.nav__link {
+  color: $primary;
+  transition: color $animation-speed;
+
+  &:hover {
+    color: rgba($primary, .8);
+  }
+}
+

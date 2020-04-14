@@ -1,0 +1,16 @@
+.btn {
+  @include multi-transition($animation-speed, background-color, color);
+
+  padding: .5em;
+  color: $primary;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: $btn-border-radius;
+}
+
+.btn--md {
+  padding: .7em;
+  font-size: 1em;
+}

@@ -1,0 +1,31 @@
+/* Heading styles */
+$h1-font-size: 45px;
+$h2-font-size: 35px;
+$h3-font-size: 30px;
+$h4-font-size: 25px;
+$h5-font-size: 20px;
+$h6-font-size: 16px;
+
+h1, .h1 {
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}

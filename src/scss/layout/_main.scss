@@ -1,0 +1,35 @@
+#wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  background-color: $body-bg;
+  font-family: $font-family-base;
+  color: $base-color;
+  font-size: $font-size-base;
+}
+
+.div, .fieldset {
+  display: flex;
+  border: 1px solid;
+}
+
+main {
+  padding-top: $header-height;
+}
+/* Styles for index.html */
+.page-list {
+  padding-top: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: disc;
+
+  li {
+    padding-bottom: 20px;
+  }
+}

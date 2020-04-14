@@ -1,0 +1,212 @@
+$header-height: 91px;
+
+.banner {
+  position: relative;
+}
+.banner__inner {
+  //position: relative;
+  min-height: calc(100vh - #{$header-height});
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.banner__title {
+  font-size: 120px;
+  color: $primary;
+}
+
+//.banner-cards {
+//  position: absolute;
+//  display: flex;
+//  align-items: center;
+//  top: 0;
+//  bottom: 0;
+//  right: 0;
+//  overflow: hidden;
+//}
+
+.banner-cards__row {
+  position: relative;
+  height: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &:hover {
+    .banner-cards__col {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.banner__text {
+  flex: 0 0 50%;
+}
+
+.banner-cards_wrap {
+  height: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.banner-cards--clone {
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.banner-cards__item {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #177ef9;
+  background-color: #d2d4d8;
+}
+
+.banner-cards__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //animation: customSlideUp 8s infinite;
+}
+
+.banner-cards__col--animation-delay {
+  animation-delay: 2s;
+}
+
+.banner-cards__item--red {
+  background-color: #bf2828;
+}
+
+.banner-cards__item--blue {
+  background-color: #297ee2;
+}
+
+.banner-cards__item--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+
+@keyframes customSlideUp {
+  0% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-100%);
+    animation-play-state: paused;
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.test-page-main {
+  .banner-cards__item {
+    animation: slideUp 10s infinite backwards;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(0);
+    }
+  49.95% {
+    transform: translateY(-1500px);
+    z-index: -1;
+  }
+  50%{
+    transform: translateY(900px);
+    z-index: unset;
+  }
+  100% {
+     transform: translateY(0);
+   }
+}
+
+//$class-slug: banner-cards__item;
+//$total-element: 12;
+//
+//
+//@for $i from 0 through $total-element {
+//  .#{$class-slug}-#{$i} {
+//    animation-delay: #{$i / 2 + 0.5}#{s};
+//  }
+//}
+
+
+
+
+
+
+
+
+
+
+
+.wrap {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.col-wrap {
+  position: relative;
+}
+
+.clone {
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.item {
+  border: 2px solid red;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  background-color: red;
+
+  &.super-item {
+    background-color: white;
+  }
+}
+
+.col-wrap {
+  min-height: 100%;
+}
+
+.col {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation-name: chlen;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes chlen {
+  0% {
+    transfom: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "gulp-assembly",
+  "version": "2.0.2",
+  "description": "gulp-assembly",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "prod": "gulp prod"
+  },
+  "repository": "https://github.com/ha100790tag/baseBuild.git",
+  "presets": "env",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "array.from": "^1.0.3",
+    "firebase": "^7.14.0",
+    "jquery": "^3.4.1",
+    "vide": "^0.5.1",
+    "web-push": "^3.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.8.3",
+    "acorn": "^6.0.4",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.2.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "natives": "^1.1.6",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "workbox-build": "^5.1.2"
+  }
+}

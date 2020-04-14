@@ -1,0 +1,19 @@
+$path: '../fonts';
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('#{$path}/Pacifico/Pacifico-Regular.ttf?94qgs3') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Antonio';
+  src: url('#{$path}/Antonio/Antonio-Bold.ttf?94qgs3') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
